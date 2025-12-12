@@ -18,7 +18,7 @@ y anticipar escenarios futuros que contribuyan a optimizar el proceso comercial 
 El análisis sistemático de los registros históricos de pagos y órdenes de los últimos tres años, mediante técnicas de análisis predictivo y clasificación de datos, permitirá identificar los factores asociados a los fallos en las transacciones, medir su impacto cuantitativo en la disminución de las ventas y establecer metas alcanzables de mejora en los procesos de cobro y conversión comercial, dentro de un horizonte temporal de seis meses.
 
 
-🔹 Justificación (muy bien conectada con tus dashboards)
+🔹 Justificación 
 
 La incorporación de técnicas de análisis de datos y proyección en el estudio del flujo de pagos resulta fundamental para transformar la información operativa del ecommerce en conocimiento estratégico.
 Mediante la aplicación de la metodología SMART, el proyecto busca definir metas claras y cuantificables, asegurando que cada fase del análisis genere resultados verificables y accionables, orientados a mejorar la eficiencia del proceso de pagos y contribuir a la recuperación de la rentabilidad del negocio.
