@@ -1,0 +1,45 @@
+🧠 DAX – razon_fallo.dax
+Razon_Fallo =
+VAR Estado =
+    UPPER( TRIM( T_PAGOS[EstadoPago] ) )
+RETURN
+SWITCH(
+    TRUE(),
+    Estado <> "FALLIDO", BLANK(),
+    T_PAGOS[MetodoPago] = "Tarjeta", "Rechazo bancario",
+    T_PAGOS[MetodoPago] = "MercadoPago", "Error de gateway",
+    T_PAGOS[MetodoPago] = "Transferencia", "Proceso no completado",
+    T_PAGOS[MetodoPago] = "Efectivo", "Usuario abandonó",
+    "Otra causa"
+)
+
+🧠Pagos Exitosos = 
+CALCULATE(
+    COUNTROWS(tabla_hechos),
+    tabla_hechos[EstadoPago] = "Exitoso"
+)
+
+
+🧠Pagos Fallidos = 
+CALCULATE(
+    COUNTROWS(tabla_hechos),
+    tabla_hechos[EstadoPago] = "Fallido"
+)
+
+🧠Pagos Totales = COUNTROWS(tabla_hechos)
+
+🧠Monto Perdido = 
+CALCULATE(
+    SUM(tabla_hechos[MontoLinea]),
+    tabla_hechos[EstadoPago] = "Fallido"
+)
+
+
+🧠Recuperacion_10 = 
+[Monto Perdido] * 0.10
+
+🧠Tasa Exito = 
+DIVIDE([Pagos Exitosos], [Pagos Totales])
+
+🧠Tasa Fallas = 
+DIVIDE([Pagos Fallidos], [Pagos Totales])
