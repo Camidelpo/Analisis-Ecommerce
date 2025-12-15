@@ -58,7 +58,7 @@ La aplicación de la metodología SMART permite definir metas claras, medibles y
 
 El análisis fue visualizado mediante un dashboard desarrollado en Power BI. A continuación se presentan capturas representativas del tablero:
 
-![Dashboard]([images/dashboard.png](https://github.com/Camidelpo/Analisis-Ecommerce/tree/main/images/dashboard))
+![Dashboard](https://github.com/Camidelpo/Analisis-Ecommerce/tree/main/Dashboard)
 
 ---
 
