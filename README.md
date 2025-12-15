@@ -44,6 +44,24 @@ La aplicación de la metodología SMART permite definir metas claras, medibles y
 
 ---
 
+## 📊 KPIs Analizados
+
+* Tasa de pagos exitosos.
+* Porcentaje de pagos fallidos.
+* Monto asociado a pagos no efectivizados.
+* Distribución de fallos por método de pago.
+* Evolución temporal de las transacciones.
+
+---
+
+## 🖼️ Dashboard
+
+El análisis fue visualizado mediante un dashboard desarrollado en Power BI. A continuación se presentan capturas representativas del tablero:
+
+![Dashboard](images/dashboard.png)
+
+---
+
 ## 📌 Conclusiones del Proyecto
 
 ### 📊 Principales hallazgos
@@ -90,9 +108,20 @@ Los resultados sugieren que, en ausencia de acciones correctivas, la tasa de pag
 
 ---
 
+## 👩‍💻 Rol y Alcance
+
+* Análisis exploratorio de datos.
+* Limpieza y transformación de datos con SQL.
+* Definición de KPIs de negocio.
+* Desarrollo de medidas DAX.
+* Construcción de dashboard en Power BI.
+* Análisis de impacto económico.
+* Proyección a corto plazo.
+
+---
+
 ## 🏁 Conclusión Final
 
 Este proyecto demuestra cómo un enfoque estructurado y orientado a objetivos SMART permite utilizar el análisis de datos para identificar problemas operativos, cuantificar su impacto económico y apoyar la toma de decisiones estratégicas.
 
 El análisis constituye una base sólida para la optimización del proceso de pagos y la recuperación progresiva de la rentabilidad del ecommerce.
-
