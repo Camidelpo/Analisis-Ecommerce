@@ -1,10 +1,10 @@
 # 📊 Análisis del Flujo de Pagos en Ecommerce
 
+
 ## 📌 Descripción del Proyecto
 
 Este proyecto se centra en el análisis del flujo de pagos de una empresa dedicada a la venta y distribución en línea de productos diversos, la cual ha experimentado una disminución sostenida en sus ventas durante los últimos tres años.
 
-Con el objetivo de mejorar la rentabilidad y la eficiencia operativa, se desarrolló un análisis integral apoyado en técnicas de análisis de datos y proyección, estructurado bajo la metodología **SMART**. El proyecto busca transformar los datos operativos del ecommerce en información estratégica que permita optimizar el proceso comercial y aumentar la conversión de ventas.
 
 ---
 
@@ -19,21 +19,27 @@ Los objetivos del proyecto, definidos bajo la metodología SMART, se orientan a:
 
 ---
 
-## 🔍 Hipótesis
+🧭 Metodología de Análisis
 
-El análisis sistemático de los registros históricos de pagos y órdenes de los últimos tres años, mediante técnicas de análisis predictivo y clasificación de datos, permitirá:
+* El proyecto se desarrolló siguiendo un enfoque cuantitativo basado en datos históricos de pagos y órdenes:
 
-* Identificar los factores asociados a los fallos en las transacciones.
-* Medir su impacto cuantitativo en la disminución de las ventas.
-* Establecer metas alcanzables de mejora en los procesos de cobro y conversión comercial, dentro de un horizonte temporal de seis meses.
+* Extracción, limpieza y modelado de datos con SQL.
+
+* Análisis exploratorio y diagnóstico para identificar patrones y causas de pagos fallidos.
+
+* Definición y cálculo de KPIs de negocio relacionados con conversión y efectividad de pagos.
+
+* Medición del impacto económico de las transacciones no efectivizadas.
+
+* Proyección a corto plazo (6 meses) mediante forecasting en Power BI.
+
+* Visualización de resultados y comunicación de insights a través de un dashboard interactivo.
 
 ---
 
-## 🧠 Justificación
+## 🔍 Hipótesis
 
-La incorporación de técnicas de análisis de datos y proyección resulta fundamental para convertir la información operativa del ecommerce en conocimiento accionable.
-
-La aplicación de la metodología SMART permite definir metas claras, medibles y temporales, asegurando que cada etapa del análisis genere resultados verificables y orientados a mejorar la eficiencia del proceso de pagos y la rentabilidad del negocio.
+El análisis de los pagos históricos permitirá identificar fallos críticos en el proceso de cobro y estimar su impacto en la conversión y las ventas a corto plazo.
 
 ---
 
@@ -54,11 +60,12 @@ La aplicación de la metodología SMART permite definir metas claras, medibles y
 
 ---
 
+
 ## 🖼️ Dashboard
 
 El análisis fue visualizado mediante un dashboard desarrollado en Power BI. A continuación se presentan capturas representativas del tablero:
 
-![Dashboard](https://github.com/Camidelpo/Analisis-Ecommerce/tree/main/Dashboard)
+[Dashboard](https://github.com/Camidelpo/Analisis-Ecommerce/tree/main/Dashboard)
 
 ---
 
@@ -75,29 +82,12 @@ El análisis fue visualizado mediante un dashboard desarrollado en Power BI. A c
 
 ### 📉 Impacto económico
 
-El análisis de los montos asociados a pagos fallidos permitió cuantificar una pérdida potencial de ingresos que afecta directamente la rentabilidad del negocio.
 
-Este enfoque posibilitó pasar de un análisis descriptivo a uno cuantitativo, alineado con los objetivos definidos bajo la metodología SMART.
+El análisis de los montos asociados a pagos fallidos permitió cuantificar una pérdida potencial de ingresos que afecta directamente la rentabilidad del negocio. Los resultados indican que las pérdidas acumuladas ascienden a $824.000, atribuibles principalmente a fallos en los procesos de pago, identificados como uno de los principales problemas de la organización.
 
----
-
-### 🔮 Proyección y análisis futuro
-
-Se incorporó un modelo de forecasting basado en tendencias históricas para estimar escenarios a corto plazo (6 meses).
-
-Los resultados sugieren que, en ausencia de acciones correctivas, la tasa de pagos exitosos tendería a mantenerse en niveles similares, con un grado significativo de incertidumbre. El intervalo de confianza del 95% refuerza la necesidad de interpretar la proyección como una referencia de tendencia y no como una predicción exacta.
 
 ---
 
-### 🎯 Evaluación bajo Metodología SMART
-
-* **Específico:** análisis focalizado en el flujo de pagos y sus fallos.
-* **Medible:** uso de KPIs, tasas y montos para cuantificar el problema.
-* **Alcanzable:** objetivos definidos a partir de datos históricos reales.
-* **Relevante:** impacto directo en ventas y rentabilidad.
-* **Temporal:** análisis histórico y proyección con horizonte temporal definido.
-
----
 
 ## 🚀 Próximos Pasos Recomendados
 
@@ -105,23 +95,20 @@ Los resultados sugieren que, en ausencia de acciones correctivas, la tasa de pag
 * Analizar el comportamiento del usuario durante el proceso de checkout.
 * Evaluar modelos predictivos más avanzados fuera de Power BI para mejorar la precisión del forecast.
 * Definir métricas de seguimiento que permitan evaluar el impacto de acciones correctivas en el corto plazo.
+* Los resultados sugieren que, en ausencia de acciones correctivas, la tasa de pagos exitosos tendería a mantenerse en niveles similares, con un grado significativo de incertidumbre. El intervalo de confianza del 95% refuerza la necesidad de interpretar la proyección como una referencia de tendencia y no como una predicción exacta.
 
 ---
-
 ## 👩‍💻 Rol y Alcance
 
-* Análisis exploratorio de datos.
-* Limpieza y transformación de datos con SQL.
-* Definición de KPIs de negocio.
-* Desarrollo de medidas DAX.
-* Construcción de dashboard en Power BI.
-* Análisis de impacto económico.
-* Proyección a corto plazo.
-
+Responsable del análisis end-to-end:
+- Preparación de datos con SQL
+- Definición de KPIs y medidas DAX
+- Análisis de impacto económico
+- Desarrollo de dashboard en Power BI
+- Proyección de escenarios a corto plazo
 ---
 
 ## 🏁 Conclusión Final
 
-Este proyecto demuestra cómo un enfoque estructurado y orientado a objetivos SMART permite utilizar el análisis de datos para identificar problemas operativos, cuantificar su impacto económico y apoyar la toma de decisiones estratégicas.
 
 El análisis constituye una base sólida para la optimización del proceso de pagos y la recuperación progresiva de la rentabilidad del ecommerce.
