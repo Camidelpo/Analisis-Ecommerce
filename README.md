@@ -83,7 +83,7 @@ El análisis fue visualizado mediante un dashboard desarrollado en Power BI. A c
 ### 📉 Impacto económico
 
 
-El análisis de los montos asociados a pagos fallidos permitió cuantificar una pérdida potencial de ingresos que afecta directamente la rentabilidad del negocio. Los resultados indican que las pérdidas acumuladas ascienden a $824.000, atribuibles principalmente a fallos en los procesos de pago, identificados como uno de los principales problemas de la organización.
+El análisis de los montos asociados a pagos fallidos permitió cuantificar una pérdida potencial de ingresos que afecta directamente la rentabilidad del negocio. Los resultados indican que las pérdidas acumuladas ascienden a $996,5 mil, atribuibles principalmente a fallos en los procesos de pago, identificados como uno de los principales problemas de la organización.
 
 
 ---
