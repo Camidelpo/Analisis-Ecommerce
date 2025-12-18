@@ -1,45 +1,34 @@
-🧠 DAX – razon_fallo.dax
-Razon_Fallo =
-VAR Estado =
-    UPPER( TRIM( T_PAGOS[EstadoPago] ) )
-RETURN
-SWITCH(
-    TRUE(),
-    Estado <> "FALLIDO", BLANK(),
-    T_PAGOS[MetodoPago] = "Tarjeta", "Rechazo bancario",
-    T_PAGOS[MetodoPago] = "MercadoPago", "Error de gateway",
-    T_PAGOS[MetodoPago] = "Transferencia", "Proceso no completado",
-    T_PAGOS[MetodoPago] = "Efectivo", "Usuario abandonó",
-    "Otra causa"
+DAX
+--
+MONTO PERDIDO
+Monto Perdido = CALCULATE([Suma Total Bruta], 'tabla_hechos'[EstadoPago] = "Fallido")
+--
+MONTO EXITOSO
+Monto_Exitoso = CALCULATE([Suma Total Bruta], 'tabla_hechos'[EstadoPago] = "Exitoso")
+--
+PAGOS FALLIDOS
+Pagos Fallidos = CALCULATE(tabla_hechos[Pagos Totales], 'tabla_hechos'[EstadoPago] = "Fallido")
+--
+PAGOS TOTALES
+Pagos Totales = DISTINCTCOUNT('tabla_hechos'[PagoID])
+--
+PAGOS EXITOSOS
+Pagos_Exitosos = CALCULATE([Pagos Totales], 'tabla_hechos'[EstadoPago] = "Exitoso")
+--
+SUMA TOTAL BRUTA
+Suma Total Bruta = SUM('tabla_hechos'[MontoPago])
+--
+TASA EXITO PAGOS
+Tasa exito Pagos = 
+DIVIDE(
+    tabla_hechos[Pagos_Exitosos],
+    tabla_hechos[Pagos_Exitosos] + tabla_hechos[Pagos Fallidos]
 )
+--
+TICKET PROMEDIO
+Ticket promedio = DIVIDE(tabla_hechos[Suma Total Bruta], [Pagos_Exitosos], 0)
+--
 
-🧠Pagos Exitosos = 
-CALCULATE(
-    COUNTROWS(tabla_hechos),
-    tabla_hechos[EstadoPago] = "Exitoso"
-)
+FORECASTING
 
-
-🧠Pagos Fallidos = 
-CALCULATE(
-    COUNTROWS(tabla_hechos),
-    tabla_hechos[EstadoPago] = "Fallido"
-)
-
-🧠Pagos Totales = COUNTROWS(tabla_hechos)
-
-🧠Monto Perdido = 
-CALCULATE(
-    SUM(tabla_hechos[MontoLinea]),
-    tabla_hechos[EstadoPago] = "Fallido"
-)
-
-
-🧠Recuperacion_10 = 
-[Monto Perdido] * 0.10
-
-🧠Tasa Exito = 
-DIVIDE([Pagos Exitosos], [Pagos Totales])
-
-🧠Tasa Fallas = 
-DIVIDE([Pagos Fallidos], [Pagos Totales])
+Se hizo utilizando tabla calendario, año y mas y los pagos exitosos. Con una duracion de 12, estacionalidad de 5 y un intervalo de confianza del 95%.
