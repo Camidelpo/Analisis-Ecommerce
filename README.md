@@ -111,4 +111,4 @@ Responsable del análisis end-to-end:
 ## 🏁 Conclusión Final
 
 
-El análisis constituye una base sólida para la optimización del proceso de pagos y la recuperación progresiva de la rentabilidad del ecommerce.
+El análisis de 1000 registros de pago, correspondientes a un período de dos años, permitió identificar una tasa de pagos exitosos del 51%, calculada sobre intentos reales de pago (333 exitosos y 320 fallidos). Los fallos se concentraron principalmente en transferencias no completadas, rechazos bancarios, errores de gateway y abandono en pagos en efectivo. A partir de esta distribución, se definieron mejoras focalizadas según la naturaleza de cada fallo —simplificación de pagos offline, redirección a medios alternativos y reintentos ante errores técnicos— y se estimó de forma conservadora la recuperación parcial de transacciones fallidas. Bajo estos supuestos, la tasa de pagos exitosos podría incrementarse hasta un valor cercano al 64%, evidenciando que la optimización del proceso de cobro representa una oportunidad concreta de mejora en la conversión del ecommerce.
